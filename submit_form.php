@@ -1,4 +1,5 @@
 <?php
+if(isset($_POST['submit'])){
 // Retrieve form data
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -17,7 +18,7 @@ $headers .= "Reply-To: $email" . "\r\n";
 
 // Send email
 $mailSent = mail($to, $subject, $message, $headers);
-
+$mailSent = mail($email,$subject2,$message,$headers2); // sends a copy of the message to the sender
 // Check if email was sent successfully
 if ($mailSent) {
     // Email sent successfully, redirect or display success message
@@ -25,5 +26,6 @@ if ($mailSent) {
 } else {
     // Email sending failed, redirect or display error message
     echo "Sorry, an error occurred while sending your message. Please try again later.";
+}
 }
 ?>

@@ -143,7 +143,7 @@ nav a:hover {
 }
 
 a.special-link {
-    margin-left: 400px;
+    margin-left: 370px;
 }
 
 a.special-link :hover {
@@ -411,6 +411,10 @@ a#active {
     a.special-link {
         margin-left: 85px;
     }
+    #testimonial a {
+        font-size: large;
+    }
+
     #secondSection {
         display: flex;
         width: 80%;
