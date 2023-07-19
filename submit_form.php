@@ -7,7 +7,7 @@ $subject = $_POST['subject'];
 $message = $_POST['message'];
 
 // Construct email message
-$to = 'rightmeal054@gmail.com';
+$to = 'chineduokatta1000@gmail.com';
 $subject = 'New Contact Form Submission: ' . $subject;
 $message = "Name: $name\nEmail: $email\nPhone: $phone\n\n$message";
 
