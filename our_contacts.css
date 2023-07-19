@@ -1,0 +1,476 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/* web background*/
+
+#background {
+    background-image: url(/img/food_background.webp);
+    width: 100%;
+    /* color: white; */
+}
+
+
+/* navTitlecontainer*/
+
+#navTitleContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#navTitleContainer>div {
+    width: 50%;
+    text-align: center;
+    background-color: #1b2230;
+    opacity: 80%;
+}
+
+
+/* titleContainer*/
+
+#titleContainer {
+    display: flex;
+    text-align: center;
+    height: 50px;
+}
+
+#title>h1 {
+    color: #ce5c8f;
+    opacity: 80%;
+    font-size: larger;
+    padding-top: 5px;
+    filter: saturate(200%);
+}
+
+#title>p {
+    color: #ce5c8f;
+    opacity: 80%;
+    font-size: medium;
+    filter: saturate(200%);
+}
+
+#rightMealLogo {
+    align-self: center;
+    width: 70px;
+    height: 40px;
+}
+
+
+/* CSS styles for the navigation bar */
+
+nav ul {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity: 100%;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+    text-transform: uppercase;
+    opacity: 100%;
+}
+
+
+/* container */
+
+#container {
+    color: black;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*Contacts*/
+
+#Contacts {
+    position: relative;
+}
+
+#ContactsImg {
+    width: 100%;
+    height: 300px;
+    filter: brightness(20%);
+}
+
+.text-block {
+    position: relative;
+    color: white;
+    top: -200px;
+    font-size: x-large;
+}
+
+
+/*Contacts link */
+
+.text-block>h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#Contacts a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 1px;
+    text-decoration: none;
+    opacity: 100%;
+}
+
+a.special-link {
+    margin-left: 450px;
+}
+
+a.special-link :hover {
+    color: green;
+    filter: brightness(300%);
+}
+
+a#active {
+    color: green;
+    filter: brightness(300%);
+}
+
+
+/*second section*/
+
+#secondSection {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+    gap: 20px;
+}
+
+
+/* cardbox > form */
+
+.cardbox {
+    max-width: 500px;
+    height: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardbox h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cardbox h3 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+.cardbox p {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.submit-button {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.submit-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* cardbox > quick contacts */
+
+.cardbox2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    /* max-width: 500px; */
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    height: 200px;
+    padding: 20px;
+    background-color: #9dca00;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardbox2-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.quick-contact {
+    color: white;
+    padding: 10px;
+    background-color: #9dca00;
+    /* margin-bottom: 30px */
+}
+
+.contact-info {
+    font-size: larger;
+    /* margin-bottom: 5px; */
+    padding: 5px 10px;
+}
+
+.phone-number {
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
+.email {
+    font-weight: bolder;
+    font-style: italic;
+    color: #f8f8f8;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 10px;
+    opacity: 80%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 426px) {
+    /* Adjustments for screens up to 425px*/
+    #navTitleContainer {
+        flex-direction: column;
+    }
+    #navTitleContainer>div {
+        width: 100%;
+    }
+    #titleContainer {
+        width: 100%;
+        justify-content: center;
+    }
+    #navbar {
+        margin-top: -1px;
+    }
+    nav a {
+        font-size: 10px;
+        padding: 14px 10px;
+    }
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #container {
+        width: 100%;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+    a.special-link {
+        margin-left: 85px;
+    }
+    #secondSection {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+    }
+    .cardbox {
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 12px;
+        padding: 20px;
+        gap: 20px;
+    }
+    #contactCardBoxContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cardbox2 {
+        height: auto;
+        width: auto;
+        margin: auto;
+        margin-bottom: 12px;
+        padding: 10px;
+        gap: 20px;
+    }
+    .cardbox2-header {
+        margin-bottom: 10px;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-logo {
+        text-align: center;
+    }
+    .footer-content>div {
+        padding: 5px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    #navTitleContainer {
+        flex-direction: column;
+    }
+    #navTitleContainer>div {
+        width: 100%;
+    }
+    #titleContainer {
+        justify-content: center;
+    }
+    #navbar {
+        margin-top: -1px;
+    }
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    a.special-link {
+        margin-left: 190px;
+    }
+    #secondSection {
+        display: flex;
+        width: 80%;
+        flex-direction: column;
+    }
+    .cardbox {
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 12px;
+        padding: 20px;
+        gap: 20px;
+    }
+    #contactCardBoxContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cardbox2 {
+        height: auto;
+        margin: auto;
+        margin-bottom: 12px;
+        padding: 20px;
+        gap: 20px;
+    }
+    .cardbox2-header {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1025px) {
+    nav a {
+        font-size: 15px;
+        padding: 14px 10px;
+    }
+    a.special-link {
+        margin-left: 290px;
+    }
+}

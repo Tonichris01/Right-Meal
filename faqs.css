@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+/* web background*/
+
+#background {
+    background-image: url(/img/food_background.webp);
+    /* color: white; */
+}
+
+
+/* navTitlecontainer*/
+
+#navTitleContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#navTitleContainer>div {
+    width: 50%;
+    text-align: center;
+    background-color: #1b2230;
+    opacity: 80%;
+}
+
+
+/* titleContainer*/
+
+#titleContainer {
+    display: flex;
+    text-align: center;
+    height: 50px;
+}
+
+#title>h1 {
+    color: #ce5c8f;
+    opacity: 80%;
+    font-size: larger;
+    padding-top: 5px;
+    filter: saturate(200%);
+}
+
+#title>p {
+    color: #ce5c8f;
+    opacity: 80%;
+    font-size: medium;
+    filter: saturate(200%);
+}
+
+#rightMealLogo {
+    align-self: center;
+    width: 70px;
+    height: 40px;
+}
+
+
+/* CSS styles for the navigation bar */
+
+nav ul {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    opacity: 100%;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+    text-transform: uppercase;
+    opacity: 100%;
+}
+
+
+/* container */
+
+#container {
+    color: black;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*faqs*/
+
+#faqs {
+    position: relative;
+}
+
+#faqsImg {
+    width: 100%;
+    height: 300px;
+    filter: brightness(20%);
+}
+
+.text-block {
+    position: relative;
+    color: white;
+    top: -200px;
+    font-size: x-large;
+}
+
+
+/*faq link */
+
+.text-block>h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#faqs a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 14px 1px;
+    text-decoration: none;
+    opacity: 100%;
+}
+
+a.special-link {
+    margin-left: 470px;
+}
+
+a.special-link :hover {
+    color: green;
+    filter: brightness(300%);
+}
+
+a#active {
+    color: green;
+    filter: brightness(300%);
+}
+
+
+/*secondSections */
+
+a#moreQuestions {
+    color: green;
+}
+
+#secondSection>h1,
+h4 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#toggle {
+    width: 80%;
+    margin: auto;
+    border: 2px solid #808080;
+}
+
+.toggle-content {
+    text-align: left;
+}
+
+.toggle-Question>.toggle-title,
+.toggle-content {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid grey;
+    text-align: left;
+}
+
+
+/*toggle question*/
+
+.toggle-title {
+    cursor: pointer;
+}
+
+.toggle-content {
+    display: none;
+}
+
+.toggle-content.show {
+    display: block;
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 10px;
+    opacity: 80%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-links ul li a,
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 426px) {
+    /* Adjustments for screens up to 425px*/
+    #navTitleContainer {
+        flex-direction: column;
+    }
+    #navTitleContainer>div {
+        width: 100%;
+    }
+    #titleContainer {
+        width: 100%;
+        justify-content: center;
+    }
+    #navbar {
+        margin-top: -1px;
+    }
+    nav a {
+        font-size: 10px;
+        padding: 14px 10px;
+    }
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #container {
+        width: 100%;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+    a.special-link {
+        margin-left: 110px;
+    }
+    #secondSection {
+        display: flex;
+        width: 95%;
+        margin: auto;
+        flex-direction: column;
+    }
+    #toggle {
+        width: 100%;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-logo {
+        text-align: center;
+    }
+    .footer-content>div {
+        padding: 5px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    #navTitleContainer {
+        flex-direction: column;
+    }
+    #navTitleContainer>div {
+        width: 100%;
+    }
+    #titleContainer {
+        justify-content: center;
+    }
+    #navbar {
+        margin-top: -1px;
+    }
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    a.special-link {
+        margin-left: 220px;
+    }
+    #secondSection {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        flex-direction: column;
+    }
+    #toggle {
+        width: 99%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1025px) {
+    nav a {
+        font-size: 15px;
+        padding: 14px 10px;
+    }
+    a.special-link {
+        margin-left: 290px;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right Meal - Testimonials</title>
+    <link rel="icon" href="/img/right_meal_short_logo.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="testimonial.css">
+</head>
+
+<body>
+    <div id="background">
+        <!-- navigation section----------------->
+        <div id="navTitleContainer">
+            <div id="titleContainer">
+                <img id="rightMealLogo" src="/img/right_meal_short_logo.png" alt="right meal logo">
+                <div id="title">
+                    <h1>RIGHT MEAL</h1>
+                    <p>Healthy Diet Healthy Life</p>
+                </div>
+            </div>
+            <div id="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="testimonial.html">Testimonials</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="our_contacts.html">Contacts</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="container">
+            <div id="testimonial">
+                <div id="firstSection">
+                    <img src="/img/diet.webp" id="testimonialImg" alt="testimonial Image">
+                    <div class="text-block">
+                        <h1>TESTIMONIALS</h1>
+                        <a class="special-link" href="index.html"><i class="fa fa-home" aria-hidden="true">Home</i> </a>::<a id="active" href="#">  TESTIMONIALS</a>
+                    </div>
+                </div>
+                <div id="secondSection">
+                    <section class="testimonial-section">
+                        <div class="testimonial-container">
+                            <h2 class="section-title">Testimonials</h2>
+                            <h3 class="section-paragraph">What do our Clients say?</h3>
+                            <div class="testimonial-slider" id="testimonialSlider">
+                                <div class="testimonial">
+                                    <p class="testimonial-text">"I struggled with managing my diabetes for years until I started diet therapy. With the guidance of a registered dietitian, I learned how to make healthier food choices and create balanced meals. Not only has my blood
+                                        sugar improved, but I feel more energetic and in control of my health. Diet therapy has been a game-changer for me!"</p>
+                                    <h4 class="testimonial-author">John Doe</h4>
+                                    <button class="delete-button" onclick="deleteTestimonial(this)">&#10006;</button>
+                                </div>
+                                <div class="testimonial">
+                                    <p class="testimonial-text">"I had been dealing with gastrointestinal issues for a long time, but diet therapy turned things around for me. Through a personalized meal plan and support from a nutritionist, I discovered which foods triggered my
+                                        symptoms and how to incorporate gut-friendly choices into my diet. I'm now able to enjoy meals without discomfort and feel so much better overall."</p>
+                                    <h4 class="testimonial-author">Jane Smith</h4>
+                                    <button class="delete-button" onclick="deleteTestimonial(this)">&#10006;</button>
+                                </div>
+                            </div>
+                            <button class="add-testimonial-button" onclick="openTestimonialCardbox()">Add Testimonial</button>
+                        </div>
+                    </section>
+                </div>
+
+                <div id="testimonialCardbox" class="cardbox">
+                    <h2>Add Testimonial</h2>
+                    <form id="testimonialForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="testimonial">Testimonial:</label>
+                            <textarea id="testimonial" name="testimonial" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="submit-button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+
+
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="/img/right_meal_short_logo.png" alt="Website Logo">
+                    <div class="title">
+                        <h1>RIGHT MEAL</h1>
+                        <p>Healthy Diet Healthy Life</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="our_contacts.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://instagram.com/right__meal?igshid=MjEwN2IyYWYwYw==" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Right Meal. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="testimonial.js"></script>
+</body>
+
+</html>
