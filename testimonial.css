@@ -381,6 +381,9 @@ a#active {
 
 @media (max-width: 426px) {
     /* Adjustments for screens up to 425px*/
+    .text-block {
+        font-size: larger;
+    }
     #navTitleContainer {
         flex-direction: column;
     }

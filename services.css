@@ -211,8 +211,8 @@ a#active {
     text-decoration: none;
     text-align: left !important;
     color: #000 !important;
-    margin-bottom: 10px;
-    overflow: 1;
+    margin-bottom: 1px;
+    /* overflow: 1; */
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -445,6 +445,10 @@ a#active {
     }
     #dietPlansSection {
         padding: 0px;
+        margin-top: -90px;
+    }
+    #dietPlansSection>h2{
+        font-size: xx-large;
     }
     .footer-content {
         flex-direction: column;
