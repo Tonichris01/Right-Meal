@@ -14,22 +14,56 @@ function closeTestimonialCardbox() {
 }
 
 // Function to add testimonial
-function addTestimonial() {
-    const testimonialText = testimonialForm.elements['testimonial'].value;
-    const testimonialAuthor = testimonialForm.elements['name'].value;
+// function addTestimonial() {
+//     const testimonialText = testimonialForm.elements['testimonial'].value;
+//     const testimonialAuthor = testimonialForm.elements['name'].value;
 
-    if (testimonialText && testimonialAuthor) {
-        const testimonial = document.createElement('div');
-        testimonial.classList.add('testimonial');
-        testimonial.innerHTML = `
-      <p class="testimonial-text">"${testimonialText}"</p>
-      <h4 class="testimonial-author">${testimonialAuthor}</h4>
-      <button class="delete-button" onclick="deleteTestimonial(this)">&#10006;</button>
-    `;
-        testimonialSlider.appendChild(testimonial);
-        closeTestimonialCardbox();
-    }
-}
+//     if (testimonialText && testimonialAuthor) {
+//         const testimonial = document.createElement('div');
+//         testimonial.classList.add('testimonial');
+//         testimonial.innerHTML = `
+//       <p class="testimonial-text">"${testimonialText}"</p>
+//       <h4 class="testimonial-author">${testimonialAuthor}</h4>
+//       <button class="delete-button" onclick="deleteTestimonial(this)">&#10006;</button>
+//     `;
+//         testimonialSlider.appendChild(testimonial);
+//         closeTestimonialCardbox();
+//     }
+// }
+
+// Function to add testimonial
+// function addTestimonial() {
+//     const testimonialText = testimonialForm.elements['testimonial'].value;
+//     const testimonialAuthor = testimonialForm.elements['name'].value;
+
+//     if (testimonialText && testimonialAuthor) {
+//         const xhr = new XMLHttpRequest();
+//         xhr.open("POST", "store_testimonial.php", true);
+//         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+//         xhr.onreadystatechange = function() {
+//             if (xhr.readyState === XMLHttpRequest.DONE) {
+//                 if (xhr.status === 200) {
+//                     // Testimonial added successfully
+//                     const testimonial = document.createElement('div');
+//                     testimonial.classList.add('testimonial');
+//                     testimonial.innerHTML = `
+//                         <p class="testimonial-text">"${testimonialText}"</p>
+//                         <h4 class="testimonial-author">${testimonialAuthor}</h4>
+//                         <button class="delete-button" onclick="deleteTestimonial(this)">&#10006;</button>
+//                     `;
+//                     testimonialSlider.appendChild(testimonial);
+//                     closeTestimonialCardbox();
+//                 } else {
+//                     // Handle error here
+//                     console.error("Failed to add testimonial.");
+//                 }
+//             }
+//         };
+//         const data = `testimonial=${encodeURIComponent(testimonialText)}&name=${encodeURIComponent(testimonialAuthor)}`;
+//         xhr.send(data);
+//     }
+// }
+
 
 // Function to delete testimonial
 function deleteTestimonial(button) {
@@ -38,10 +72,10 @@ function deleteTestimonial(button) {
 }
 
 // Form submission event
-testimonialForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    addTestimonial();
-});
+// testimonialForm.addEventListener('submit', function(e) {
+//     e.preventDefault();
+//     // addTestimonial();
+// });
 
 // Close cardbox event
 testimonialCardbox.addEventListener('click', function(e) {

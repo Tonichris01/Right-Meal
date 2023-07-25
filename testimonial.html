@@ -52,7 +52,7 @@
                             <h2 class="section-title">Testimonials</h2>
                             <h3 class="section-paragraph">What do our Clients say?</h3>
                             <div class="testimonial-slider" id="testimonialSlider">
-                                <div class="testimonial">
+                                <!-- <div class="testimonial">
                                     <p class="testimonial-text">"I struggled with managing my diabetes for years until I started diet therapy. With the guidance of a registered dietitian, I learned how to make healthier food choices and create balanced meals. Not only has my blood
                                         sugar improved, but I feel more energetic and in control of my health. Diet therapy has been a game-changer for me!"</p>
                                     <h4 class="testimonial-author">John Doe</h4>
@@ -63,7 +63,7 @@
                                         symptoms and how to incorporate gut-friendly choices into my diet. I'm now able to enjoy meals without discomfort and feel so much better overall."</p>
                                     <h4 class="testimonial-author">Jane Smith</h4>
                                     <button class="delete-button" onclick="deleteTestimonial(this)">&#10006;</button>
-                                </div>
+                                </div> -->
                             </div>
                             <button class="add-testimonial-button" onclick="openTestimonialCardbox()">Add Testimonial</button>
                         </div>
@@ -72,7 +72,7 @@
 
                 <div id="testimonialCardbox" class="cardbox">
                     <h2>Add Testimonial</h2>
-                    <form id="testimonialForm">
+                    <form id="testimonialForm" method="post" action="store_testimonial.php">
                         <div class="form-group">
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" required>
