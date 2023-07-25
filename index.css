@@ -30,6 +30,10 @@
 
 
 /* titleContainer*/
+#logolink{
+    display: flex;
+    text-decoration: none;
+}
 
 #titleContainer {
     display: flex;
