@@ -8,7 +8,7 @@
     $dbname = "real_meal";
 
     // Create a new connection
-    $conn = new mysqli($db_host, $db_user, $db_pass, $dbname);
+    $conn = mysqli_connect($db_host, $db_user, $db_pass, $dbname);
 
     // Check the connection
     if ($conn->connect_error) {
