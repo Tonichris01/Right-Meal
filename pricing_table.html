@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pricing_table.css" />
+    <title>Pricing Table with Toggle</title>
+  </head>
+  <body>
+    
+    <header class="main-header">
+      <h1>Pricing Table</h1>
+    </header>
+
+    <section class="about">
+      <div class="container">
+        <h2>Choose your business plan</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          omnis voluptatibus enim, suscipit magnam nostrum voluptates soluta,
+          itaque quasi debitis cumque nulla nesciunt laboriosam sapiente
+          quibusdam, porro at et error?
+        </p>
+        <div class="toggle">
+          <span id="monthly">Monthly</span>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <span id="yearly">Yearly</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="price-table">
+      <div class="container">
+        <div class="cards">
+          <div class="card">
+            <p class="name">Basic</p>
+            <p class="description">
+              This is a price plan card for all your designing needs have fun
+            </p>
+            <h4 class="price">
+              <sup class="dollar">$</sup><span id="basic">31</span
+              ><span class="cents">.99</span>
+            </h4>
+            <p class="per" id="per">Per Month</p>
+            <p class="long-des">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              doloribus aliquam est repellat veniam officia
+            </p>
+            <div class="button-card">
+              <button class="btn">Start Free Trial</button>
+            </div>
+          </div>
+          <div class="card premium">
+            <p class="name">Premium</p>
+            <p class="description">
+              This is a price plan card for all your designing needs have fun
+            </p>
+            <h4 class="price">
+              <sup class="dollar">$</sup><span id="premium">76</span
+              ><span class="cents">.99</span>
+            </h4>
+            <p class="per" id="per">Per Month</p>
+            <p class="long-des">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              doloribus aliquam est repellat veniam officia
+            </p>
+            <div class="button-card">
+              <button class="btn">Start Free Trial</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <p class="name">Premiere</p>
+            <p class="description">
+              This is a price plan card for all your designing needs have fun
+            </p>
+            <h4 class="price text">
+              find features that suits you
+            </h4>
+            <p class="long-des">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              doloribus aliquam est repellat veniam officia
+            </p>
+            <div class="button-card">
+              <button class="btn">More information</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="pricing_table.js"></script>
+  </body>
+</html>
