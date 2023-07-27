@@ -416,10 +416,11 @@ h2 {
 }
 
 #learnMore {
-    width: 20%;
+    width: max-content;
     margin: auto;
-    margin-left: 35%;
-    padding: 15px 100px;
+    /* margin-left: 35%; */
+    padding: 10px 20px;
+    display: block;
     border: none;
     border-radius: 15px;
     font-size: medium;
@@ -689,9 +690,9 @@ p {
     .testimonial-text {
         font-size: large;
     }
-    #learnMore {
+    /* #learnMore {
         margin-left: 15%;
-    }
+    } */
 
     #fifthSection{
         padding-top: 20px;
@@ -845,9 +846,9 @@ p {
     .testimonial-text {
         font-size: x-large;
     }
-    #learnMore {
+    /* #learnMore {
         margin-left: 25%;
-    }
+    } */
     #missionSection {
         width: auto;
         left: 0px;
@@ -916,9 +917,9 @@ p {
         width: 99%;
         margin: auto;
     }
-    #learnMore {
+    /* #learnMore {
         margin-left: 29%;
-    }
+    } */
     #missionSection {
         width: auto;
         top: -500px;
