@@ -105,7 +105,7 @@ nav a:hover {
     color: black;
     background-color: white;
     width: 80%;
-    /* height: 1000px; */
+    min-height: 100px;
     margin: auto;
     padding-bottom: 40px;
     font-family: 'Times New Roman', Times, serif;
@@ -161,8 +161,477 @@ a#active {
     color: green;
     filter: brightness(300%);
 }
+#firstSection{
+    height: 360px;
+}
 
+/*pricing plan*/
+#pricingTable{
+    display: block;
+}
+.container1 {
+    max-width: 1000px;
+    margin: 10px auto;
+  }
+  
+  .main-header {
+    padding: 50px;
+  }
+  .main-header h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .about {
+    margin: 0;
+    background-color: whitesmoke;
+    padding: 1%;
+    text-align: center;
+  }
+  
+  /**  TOGGLE CLASS */
+  .toggle {
+    margin: 20px 0px;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  /* NEWS */
+  .news {
+    color: #fff;
+    margin: 10px 0;
+  }
+  .news marquee {
+    background-color: teal;
+  }
+  
+  /* CARDS Pricing Table*/
+  .price-table {
+    background-color: #2196f3;
+    padding: 20px 0;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 2em;
+    /* background-color: thistle; */
+    margin: 30px auto;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    min-height: 450px;
+    padding: 20px;
+    margin: 0.5em;
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
+  
+  .card .name {
+    font-size: 16px;
+    font-family: "Poppins";
+    background-color: #115ffb2c;
+    font-weight: lighter;
+    padding: 2px 20px;
+    border-radius: 25px;
+    margin: 2em auto;
+  }
+  
+  .card p {
+    font-size: 0.8em;
+    padding: 20px 0;
+  }
+  .naira {
+    font-size: 0.6em;
+  }
+  .card .price {
+    padding: 10px 0 0 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2196f3;
+    margin-bottom: 0;
+    font-family: "Permanent Marker", cursive;
+  }
+  .card .text {
+    font-weight: normal;
+    font-size: 1.1em;
+    margin: 1.2em auto;
+  }
+  .card .cents {
+    font-size: 0.5em;
+  }
+  .card .per {
+    padding: 0px 0px 15px 0px;
+    line-height: 0;
+  }
+  
+  .card .long-des {
+    margin: 15px auto;
+  }
+  /* BUTTONS */
+  .card .btn {
+    padding: 10px 15px;
+    border: 1px solid #2196f3;
+    color: #2196f3;
+    background-color: #fff;
+    border-radius: 5px;
+    text-transform: capitalize;
+  }
+  
+  .card .btn:hover {
+    background-color: #2196f3;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+  
+  /* HOVER */
+  .card {
+    transition: 0.5s ease-in-out;
+  }
+  
+  .card:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 100;
+  }
+  
+  .card:hover .name {
+    background-color: #115ffbdc;
+    color: #fff;
+  }
+  
+  /* RECOMMEND */
+  .cards .premium {
+    position: relative;
+  }
+  
+  .cards .premium:hover::before {
+    content: "Recommended";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    transform: translateX(25%, 25%);
+    background-color: #defef0;
+    color: #02de7f;
+    padding: 14px 6px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 0.6em;
+  }
 
+/*pricing table*/
+
+.no-flick{
+    -webkit-transform:translate3d(0,0,0);
+    filter: blur(0px);
+  }
+  
+  .toggled {
+    opacity: 1;
+  }
+  
+
+  #container2 {
+    background-color: white;
+    box-shadow: 12px 15px 26px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    height: 500px;
+    margin: 55px auto;
+    margin-bottom: 100px;
+    width: 40%; 
+    overflow: hidden;
+  }
+  
+  #container2 p {
+    color: #848484;
+    font-weight: 100;
+    letter-spacing: 0.32px;
+    margin: 10px 0;
+  }
+  
+  #container2 p.form-text {
+    color: #979797;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 0.28px;
+     margin-bottom: 5px;
+  }
+  
+  #container2 h1 {
+    color: #6bbc77;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: .85px;
+    margin-bottom: 6px;
+    padding: 0.1rem;
+    text-transform: uppercase;
+    text-align: left;
+    width: 88%;
+  }
+  
+  #container2 .divider {
+    background-color: #E0E0E0;
+    height: 1px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  #container2 .wrapper {
+    width: 88%;
+    margin: 20px auto;
+  }
+  
+  /* Cards -------------------- */
+  
+  #container2 .image-block {
+    margin: 30px auto 15px;
+    text-align: center;
+  }
+  #container2 img {
+    margin: 0 5px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .39);
+    opacity: 0.5;
+    border-radius: 6px;
+    transition: all .5s;
+  }
+  
+  #container2 img:hover {
+    opacity : 1;
+    transform: translateZ(0);
+    backface-visibility: hidden; 
+  }
+  
+  
+  /* ------- FORM -------------- */
+  
+  #container2 select,
+  input.cc-holder,
+  input.cc-number,
+  input.cc-ccv {
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, .7);
+    height: 39px;
+    margin-top: 0;
+    outline: none;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  
+  #container2 input.cc-holder {
+    width: 99%;
+  }
+  
+  #container2 input.cc-number {
+    width: 22%;
+    display: inline-block;
+    margin-right: 1px;
+  }
+  #container2 input.cc-ccv {
+    width: 100%;
+  }
+  
+  #container2 input[type=text],
+  input[type=num] {
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: border .4s ease-in-out;
+  }
+  
+  #container2 input[type=text]:focus,
+  input[type=num]:focus {
+      border: 2px solid #6BBC77;
+  }
+  
+  #container2 fieldset {
+    border: none;
+  }
+  
+  #container2 label {
+    display: block;
+    margin-bottom: 7px;
+    color: #979797;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 0.28px;
+  }
+  #ExpAndccv{
+    display: flex;
+  }
+  #container2 select#expiration-month {
+    width: 58%;
+    margin-right: 4px;
+  }
+  
+  #container2 select#expiration-year {
+    width: 38%;
+  }
+  
+  #container2 fieldset.exp-date {
+    float: left;
+    /*border: 1px solid black;*/
+    width: 270px;
+  }
+  
+  #container2 fieldset.ccv {
+    float: right;
+    /*border: 1px solid black;*/
+    width: 86px;
+  }
+  
+  #container2 fieldset.submit-btn {
+    padding-top: 20px;
+  }
+  
+  /* Submit Btn -------------------- */
+  #container2 button {
+    width: 100%;
+    height: 39px;
+    border: none;
+    border-radius: 10px;
+    background-color: #6bbc77;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    outline: none;
+    transition: all .2s ease-in-out;
+    position: relative;
+  }
+  
+  #container2 button::after {
+    content: '';  
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+    box-shadow: inset 0 4px 0 transparent, 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  #container2 button:hover::after {
+    background: rgba(0, 0, 0, .1);
+    box-shadow: inset 0 4px 0 rgba(0, 0, 0, .1);
+  }
+  
+  
+
+ /* after payment*/ 
+ #paymentsuccessful{
+    display: none;
+    flex-direction: column;
+    width: auto;
+    margin: auto;
+ }
+ .afterPayment {
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+    /* display: flex; */
+    flex-direction:column;
+    justify-items: center;
+    width: 100%;
+    margin: auto;
+    margin-left: 50%;
+  }
+  
+  .loading-spinner {
+    border: 10px solid rgba(0, 0, 0, 0.3);
+    border-top: 10px solid green;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto 10px auto;
+  }
+  
+  .message {
+    color: #000;
+    font-size: xx-large;
+    text-align: center;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
 /* second section*/
 
 #secondSection {
@@ -176,6 +645,7 @@ a#active {
     text-align: left;
     height: auto;
     padding: 10px;
+    width: 100%;
 }
 
 #dietPlansSection>h2 {
@@ -191,7 +661,7 @@ a#active {
     flex-direction: column;
     /* flex-wrap: wrap; */
     /* justify-content: flex-start; */
-    gap: 20px;
+    gap: 0px;
     width: 100%;
 }
 
@@ -202,7 +672,7 @@ a#active {
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .diet-plan-link {
@@ -438,6 +908,9 @@ a#active {
     a.special-link {
         margin-left: 85px;
     }
+    #firstSection {
+        height: auto;
+    }
     #secondSection {
         display: flex;
         width: 99%;
@@ -447,6 +920,9 @@ a#active {
     .diet-plan-link {
         width: 300px !important;
         font-size: larger;
+    }
+    .meal-link{
+        font-size: small;
     }
     #dietPlansSection {
         padding: 0px;
@@ -463,6 +939,24 @@ a#active {
     }
     .footer-content>div {
         padding: 5px;
+    }
+    .cards {
+        flex-wrap: wrap;
+        padding: 0;
+      }
+      .card {
+        width: 100%;
+        margin: 1em;
+      }
+    #container2{
+        width: 100%;
+        height: auto;
+    }
+    #container2 select#expiration-month {
+        width: 50%;
+    }
+    #container2 select#expiration-year{
+        width: 40%;
     }
 }
 
@@ -487,6 +981,7 @@ a#active {
     a.special-link {
         margin-left: 190px;
     }
+
     #secondSection {
         display: flex;
         width: 80%;
@@ -496,6 +991,17 @@ a#active {
         width: 400px !important;
         font-size: xx-large;
     }
+    .cards {
+        flex-wrap: wrap;
+        padding: 0 2em;
+      }
+      .card {
+        width: 80%;
+      }
+      #container2{
+        width: 80%;
+        height: auto;
+    }  
 }
 
 @media (min-width: 769px) and (max-width: 1025px) {
@@ -505,5 +1011,13 @@ a#active {
     }
     a.special-link {
         margin-left: 290px;
+    }
+    .cards {
+        width: 80%;
+        padding: 0;
+      }
+      #container2{
+        width: 60%;
+        height: auto;
     }
 }

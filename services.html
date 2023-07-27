@@ -46,7 +46,153 @@
                         <a class="special-link" href="home.html"><i class="fa fa-home" aria-hidden="true">Home</i> </a>::<a id="active" href="#">  SERVICES</a>
                     </div>
                 </div>
-                <div id="secondSection">
+                <div id="pricingTable" style="display: block;">
+                    <!-- <header class="main-header">
+                      <h1>Pricing Table</h1>
+                    </header>
+                     -->
+                    <section class="about">
+                    <div class="container1">
+                      <h2>Choose your Diet plan</h2>
+                      <p>
+                        Unlock Your Best Self: Empower Your Journey with a Tailored Die Plan! Embrace Nutritional Harmony, Energize Your Body and Savor the Flavor of Healthful Eating. 
+                      </p>
+                      <p>
+                        Your Future Starts NOw!
+                      </p>
+                      <div class="toggle">
+                        <span id="monthly">Monthly</span>
+                        <label class="switch">
+                          <input type="checkbox" />
+                          <span class="slider round"></span>
+                        </label>
+                        <span id="yearly">Yearly</span>
+                      </div>
+                    </div>
+                  </section>
+              
+                  <section class="price-table">
+                    <div class="container1">
+                      <div class="cards">
+                        <div class="card">
+                          <p class="name">Basic</p>
+                          <p class="description">
+                            Essential Nutrition, Simple Choices. kickstart your journey to a healthier you with our basic diet plan, offering balanced meals and easy-to-follow guidelines for sustainable results.
+                          </p>
+                          <h4 class="price">
+                            <sup class="naira">&#8358</sup><span id="basic">299</span
+                              ><span class="cents">.99</span>
+                            </h4>
+                            <p class="per" id="per">Per Month</p>
+                            <!-- <p class="long-des">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                              doloribus aliquam est repellat veniam officia
+                            </p> -->
+                            <div class="button-card">
+                              <button class="btn" onclick="showContainer2()">Start Free Trial</button>
+                            </div>
+                          </div>
+                        <div class="card premium">
+                          <p class="name">Premium</p>
+                          <p class="description">
+                            Elevate Your Wellness, Unleash Your Potential. Experience the ultimate in personalized nutrition with our premium diet plan, curated by experts to meet your unique goals, tastes, and lifestyles. Embrace a transformative journey towards optimal health and vitality.
+                          </p>
+                          <h4 class="price">
+                            <sup class="naira">&#8358</sup><span id="premium">1999</span
+                            ><span class="cents">.99</span>
+                          </h4>
+                          <p class="per" id="per">Per Month</p>
+                          <!-- <p class="long-des">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                            doloribus aliquam est repellat veniam officia
+                          </p> -->
+                          <div class="button-card">
+                            <button class="btn" onclick="showContainer2()">Start Free Trial</button>
+                          </div>
+                        </div>                    
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div id="container2" style="display: none;">
+                    <div class="wrapper">
+                      <h1>Checkout</h1>
+                      <div class="divider"></div>
+                      <p>Choose a payment method:</p>
+                      <div class="image-block">
+                        <img id="visa-card" class="off no-flick" href="#" src="https://image.ibb.co/ksN76v/visa.png" alt="Pay with Visa">
+                        <img id="diners-club-card" href="#" src="https://image.ibb.co/cjswzF/diners_club.png" alt="Pay with diners-club">
+                        <img id="amex-card" href="#" src="https://image.ibb.co/byLS6v/amex.png" alt="Pay with American Express">
+                        <img id="mastercard-card" href="#" src="https://image.ibb.co/hec76v/mastercard.png" alt="Pay with Mastercard">
+                      </div> 
+                      <form>
+                       
+                      <fieldset id="first-fieldset">
+                        <label for="cc-numb">Credit Card Number</label>
+                        <input id="cc-number-1" class="cc-number" type="number" maxlength="4" required>
+                        <input id="cc-number-2" class="cc-number" type="number" maxlength="4" required>
+                        <input id="cc-number-3" class="cc-number" type="number" maxlength="4" required>
+                        <input id="cc-number-4" class="cc-number" type="number" maxlength="4" required>
+                      </fieldset>
+                      
+                      <fieldset>
+                        <label for="cc-hold">Credit Card Holder</label>
+                        <input class="cc-holder" type="text" required>
+                      </fieldset>
+                      <div id="ExpAndccv">
+                          <fieldset class="exp-date">
+                            <label for="expiration">Expiration Date</label>
+                            <select name="month" id="expiration-month" required>
+                              <option>Month</option>
+                              <option>January</option>
+                              <option>February</option>
+                                  <option>March</option>
+                                  <option>April</option>
+                              <option>May</option>
+                              <option>June</option>
+                              <option>July</option>
+                              <option>August</option>
+                              <option>September</option>
+                              <option>October</option>
+                              <option>November</option>
+                              <option>December</option>
+                             </select>
+                             
+                             <select name="year" id="expiration-year" required>
+                              <option>Year</option>
+                              <option>2018</option>
+                              <option>2019</option>
+                              <option>2020</option>
+                              <option>2021</option>
+                              <option>2022</option>
+                            </select>
+                          </fieldset>
+                           
+                          <fieldset class="ccv">
+                            <label for="cvv-number">CCV</label>
+                            <input class="cc-ccv" type="number"  maxlength="3" required>
+                          </fieldset>
+                      </div> 
+                      
+                      <fieldset class="submit-btn">
+                        <button type="button" onclick="showPaymentSuccessful()">Submit payment</button>
+                      </fieldset>
+                     </form>
+                    </div>
+                </div>
+                <div id="paymentsuccessful" style="display: none;">
+                    <div class="afterPayment" id="loadingCard">
+                      <div class="loading-spinner"></div>
+                      <div class="message">Loading...</div>
+                    </div>
+                    
+                    <div class="afterPayment" id="successCard">
+                      <div class="message">Your Payment has been successful!</div>
+                    </div>
+                    
+                </div>
+                  
+                <div id="secondSection" style="display: none;">
                     <div id="dietPlansSection">
                         <h2>Diet Plans</h2>
                         <ul id="dietPlansList">
