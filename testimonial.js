@@ -14,22 +14,22 @@ function closeTestimonialCardbox() {
 }
 
 // Function to add testimonial
-// function addTestimonial() {
-//     const testimonialText = testimonialForm.elements['testimonial'].value;
-//     const testimonialAuthor = testimonialForm.elements['name'].value;
+function addTestimonial() {
+    const testimonialText = testimonialForm.elements['testimonial'].value;
+    const testimonialAuthor = testimonialForm.elements['name'].value;
 
-//     if (testimonialText && testimonialAuthor) {
-//         const testimonial = document.createElement('div');
-//         testimonial.classList.add('testimonial');
-//         testimonial.innerHTML = `
-//       <p class="testimonial-text">"${testimonialText}"</p>
-//       <h4 class="testimonial-author">${testimonialAuthor}</h4>
-//       <button class="delete-button" onclick="deleteTestimonial(this)">&#10006;</button>
-//     `;
-//         testimonialSlider.appendChild(testimonial);
-//         closeTestimonialCardbox();
-//     }
-// }
+    if (testimonialText && testimonialAuthor) {
+        const testimonial = document.createElement('div');
+        testimonial.classList.add('testimonial');
+        testimonial.innerHTML = `
+      <p class="testimonial-text">"${testimonialText}"</p>
+      <h4 class="testimonial-author">${testimonialAuthor}</h4>
+      <button class="delete-button" onclick="deleteTestimonial(this)">&#10006;</button>
+    `;
+        testimonialSlider.appendChild(testimonial);
+        closeTestimonialCardbox();
+    }
+}
 
 // Function to add testimonial
 // function addTestimonial() {
@@ -82,4 +82,18 @@ testimonialCardbox.addEventListener('click', function(e) {
     if (e.target === testimonialCardbox) {
         closeTestimonialCardbox();
     }
+});
+
+// sign outbutton
+const signOutIcon = document.getElementById("signOutIcon");
+
+signOutIcon.addEventListener("click", () => {
+  const shouldSignOut = window.confirm("Do you want to sign out?");
+  if (shouldSignOut) {
+    // Navigate to the index page (change "index.html" to your desired URL)
+    window.location.href = "index.html";
+  } else {
+    // Remove the prompt if the user chooses not to sign out
+    window.alert("Sign-out canceled.");
+  }
 });

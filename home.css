@@ -29,7 +29,15 @@
     opacity: 80%;
 }
 
-
+.fa-sign-out{
+    color:white;
+    font-size: 30px;  
+    padding: 7px;
+    cursor: pointer;
+}
+.fa-sign-out:hover{
+    color: #000000;
+}
 /* titleContainer*/
 #logolink{
     display: flex;
@@ -581,6 +589,9 @@ p {
     #navTitleContainer>div {
         width: 100%;
     }
+    .fa-sign-out{
+        font-size: 20px;
+    }
     #titleContainer {
         width: 100%;
         justify-content: center;
@@ -589,7 +600,7 @@ p {
         margin-top: -1px;
     }
     nav a {
-        font-size: 10px;
+        font-size: 8px;
         padding: 14px 10px;
     }
     nav ul {

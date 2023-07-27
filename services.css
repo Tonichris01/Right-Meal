@@ -28,6 +28,15 @@
     opacity: 80%;
 }
 
+.fa-sign-out{
+  color:white;
+  font-size: 30px;  
+  padding: 7px;
+  cursor: pointer;
+}
+.fa-sign-out:hover{
+  color: #000000;
+}
 
 /* titleContainer*/
 
@@ -884,6 +893,9 @@ a#active {
     #navTitleContainer>div {
         width: 100%;
     }
+    .fa-sign-out{
+      font-size: 20px;
+  }
     #titleContainer {
         width: 100%;
         justify-content: center;
