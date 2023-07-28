@@ -1,31 +1,34 @@
 <?php
-if(isset($_POST['submit'])){
-// Retrieve form data
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    // Get form data
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $phone = $_POST["phone"];
+    $subject = $_POST["subject"];
+    $message = $_POST["message"];
 
-// Construct email message
-$to = 'chineduokatta1000@gmail.com';
-$subject = 'New Contact Form Submission: ' . $subject;
-$message = "Name: $name\nEmail: $email\nPhone: $phone\n\n$message";
+    // Email setup
+    $to = "chineduokatta1000@gmail.com"; // Replace with the recipient email address
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 
-// Set additional headers
-$headers = "From: $name <$email>" . "\r\n";
-$headers .= "Reply-To: $email" . "\r\n";
+    // Compose the email body
+    $email_body = "Name: $name\n";
+    $email_body .= "Email: $email\n";
+    $email_body .= "Phone: $phone\n";
+    $email_body .= "Subject: $subject\n";
+    $email_body .= "Message:\n$message\n";
 
-// Send email
-$mailSent = mail($to, $subject, $message, $headers);
-$mailSent = mail($email,$subject2,$message,$headers2); // sends a copy of the message to the sender
-// Check if email was sent successfully
-if ($mailSent) {
-    // Email sent successfully, redirect or display success message
-    echo "Thank you for your message. We will get back to you soon!";
-} else {
-    // Email sending failed, redirect or display error message
-    echo "Sorry, an error occurred while sending your message. Please try again later.";
-}
+    // Send the email
+    mail($to, $subject, $email_body, $headers);
+
+    // Response message to be displayed on the thank-you card box
+    $response_message = "Thank you for your message! We will get back to you soon.";
+
+    // JSON response to be sent to JavaScript for displaying the card box
+    $response = array("message" => $response_message);
+    echo json_encode($response);
+    exit;
 }
 ?>

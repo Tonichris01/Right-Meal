@@ -1,13 +1,36 @@
-// Form Submission
-const contactForm = document.getElementById('contact-form');
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent default form submission behavior
 
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    // Perform form submission or validation logic here
-    // use fetch to send form data to a server
+    // Collect form data
+    const formData = new FormData(event.target);
+    const formDataObject = {};
+    formData.forEach((value, key) => {
+        formDataObject[key] = value;
+    });
 
-    // Clear form fields after submission
-    contactForm.reset();
+    // Send the data as a JSON payload using Fetch API
+    fetch("submit_form.php", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formDataObject)
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle the server response
+        const thankYouMessage = document.getElementById("thank-you-message");
+        thankYouMessage.textContent = data.message;
+        thankYouMessage.style.display = "block";
+
+        // Hide the thank-you message after 3 seconds
+        setTimeout(() => {
+            thankYouMessage.style.display = "none";
+        }, 3000);
+    })
+    .catch(error => {
+        console.error("Error occurred during form submission:", error);
+    });
 });
 
 // sign outbutton
