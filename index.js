@@ -16,5 +16,5 @@ function validateForm() {
   // Form is valid, continue with form submission
   // Form is valid, redirect to home.html
   window.location.href = "home.html";
-  return true;
+  return false;
 }
