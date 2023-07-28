@@ -210,7 +210,33 @@ nav a:hover {
     transform: translateY(2px);
 }
 
+/*daily goals*/
+.daily-goal ul {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
 
+/* Style the DAILY GOALS section */
+.daily-goals {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.daily-goals h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.daily-goals ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.daily-goals ol {
+    line-height: 1.6;
+}
 /* second section */
 
 #firstPartSecondSection>h2 {
